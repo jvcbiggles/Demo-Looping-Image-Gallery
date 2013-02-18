@@ -1,0 +1,37 @@
+<HTML><HEAD>
+<META http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<TITLE>My Webpage</TITLE>
+
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript" src="gallery/image-slider.js" >
+</script>
+<link href="gallery/gallery.css" rel="stylesheet" media="all" type="text/css" >
+<link href="main.css" rel="stylesheet" media="all" type="text/css" >
+</head>
+		
+<BODY>
+	<div id="container">
+		<H1>Looping Image Gallery</H1>
+		<dfn>This is an example of setting up an image gallery to run in a continuous loop using Lucid.</dfn><br><br>
+		<tt>The loop is implemented using a Timer-Block which I modified in the </tt><br>
+		<tt>code to run continuously. This was done in the code by replacing: </tt><br>
+		<tt>"setTimout..." with "myInterval = setInterval..." </tt><br><br>
+		<tt>The looping is stopped by clicking the "Stop Looping" button</tt><br>
+		<tt>which invokes the code: "clearInterval(myInterval)" </tt><br><br>
+		
+		<div  id="gallery">
+			<img src="images/road.jpg" alt="" >
+			<img src="images/tube1.jpg" alt="" >
+			<img src="images/tube2.jpg" alt="" >
+		</div> <!-- end gallery -->
+		
+		<div class="stop" >Stop Looping</div>
+	</div> <!-- end container -->
+</BODY></HTML>
